@@ -34,6 +34,7 @@ class PagedListView<PageKeyType, ItemType> extends BoxScrollView {
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
+    this.customItemCount,
     // Matches [ScrollView.cacheExtent]
     double? cacheExtent,
     // Matches [ScrollView.dragStartBehavior]
@@ -90,6 +91,7 @@ class PagedListView<PageKeyType, ItemType> extends BoxScrollView {
     this.addAutomaticKeepAlives = true,
     this.addRepaintBoundaries = true,
     this.addSemanticIndexes = true,
+    this.customItemCount,
     // Matches [ScrollView.cacheExtent]
     double? cacheExtent,
     // Matches [ScrollView.dragStartBehavior]
@@ -151,6 +153,7 @@ class PagedListView<PageKeyType, ItemType> extends BoxScrollView {
 
   /// Matches [PagedSliverList.shrinkWrapFirstPageIndicators].
   final bool _shrinkWrapFirstPageIndicators;
+  final int? customItemCount;
 
   @override
   Widget buildChildLayout(BuildContext context) {
