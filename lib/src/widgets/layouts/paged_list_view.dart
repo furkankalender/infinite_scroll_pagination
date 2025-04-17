@@ -166,6 +166,7 @@ class PagedListView<PageKeyType, ItemType> extends BoxScrollView {
             addAutomaticKeepAlives: addAutomaticKeepAlives,
             addRepaintBoundaries: addRepaintBoundaries,
             addSemanticIndexes: addSemanticIndexes,
+            customItemCount: customItemCount,
             itemExtent: itemExtent,
             shrinkWrapFirstPageIndicators: _shrinkWrapFirstPageIndicators,
           )
@@ -176,6 +177,7 @@ class PagedListView<PageKeyType, ItemType> extends BoxScrollView {
             addRepaintBoundaries: addRepaintBoundaries,
             addSemanticIndexes: addSemanticIndexes,
             itemExtent: itemExtent,
+            customItemCount: customItemCount,
             shrinkWrapFirstPageIndicators: _shrinkWrapFirstPageIndicators,
             prototypeItem: prototypeItem,
           );
