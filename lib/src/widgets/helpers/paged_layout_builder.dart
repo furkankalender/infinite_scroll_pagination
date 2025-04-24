@@ -275,7 +275,7 @@ class _PagedLayoutBuilderState<PageKeyType, ItemType>
       }
     }
 
-    final item = itemList.first;
+    final item = itemList.length > index ? itemList[index] : itemList.first;
     return _builderDelegate.itemBuilder(context, item, index);
   }
 }
